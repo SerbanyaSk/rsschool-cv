@@ -1,12 +1,10 @@
 # Sergey Kondratyuk
 
----
-
 ## My contacts
 
-- **Telegram:** https://t.me/SerbanyaSk
+- **Telegram:** [SerbanyaSk](https://t.me/SerbanyaSk)
 - **Discord:** SerbanyaSk#8303
-- **VK:** https://vk.com/serbanyask
+- **VK:** [SerbanyaSk](https://vk.com/serbanyask)
 - **Email:** serbanya.sk@gmail.com
 
 ---
@@ -26,7 +24,7 @@ I'm learning the basics:
 - HTML5 & CSS3
 - JavaScript
 - PHP & MySQL
-- Git \* GitHub
+- Git & GitHub
 
 I am well acquainted with **Visual Basic for Applications**.
 
@@ -66,8 +64,8 @@ function getParticipants(handshakes) {
 ### My education
 
 - Technical school specializing in **software development**
-- All intensive **HTML & CSS** courses https://webref.ru/
-- **JavaScript**: _JavaScript for children. Self-help guide on programming_ and i'm studying https://learn.javascript.ru/
+- All intensive **HTML & CSS** courses [WebReference](https://webref.ru/)
+- **JavaScript**: _JavaScript for children. Self-help guide on programming_ and i'm studying [learn.javascript.ru](https://learn.javascript.ru/)
 - More than 10 thousand lines of code when solving tasks on automation of document flow in the enterprise using Visual Basic for Applications(currently successfully used)
 - currently in the process of RS Schools Course "JavaScript/Front-end"
 
