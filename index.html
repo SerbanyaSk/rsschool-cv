@@ -5,24 +5,33 @@
     <title>Sergey Kondratyuk CV</title>
     <link type="image/png" sizes="32x32" rel="icon" href="images/favicon.png" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/highlight_1/styles/default.css" />
+    <script src="styles/highlight_1/highlight.pack.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad("javascript");
+    </script>
   </head>
   <body>
     <header>
       <img src="images/photo.jpg" alt="photo by Sergey Kondratyuk" />
-      <h1>
-        Sergey <br />
-        Kondratyuk
-      </h1>
-      <nav>
-        <li><a href="#my-contacts">My contacts</a></li>
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#my-code-example">My code example</a></li>
-        <li><a href="#my-education">My education</a></li>
-        <li><a href="#knowledge-of-languages">Knowledge of languages</a></li>
-      </nav>
+      <div>
+        <h1>
+          Sergey <br />
+          Kondratyuk
+        </h1>
+        <p>Beginner front-end developer</p>
+      </div>
     </header>
+    <nav>
+      <a href="#my-contacts">My contacts</a>
+      <a href="#about-me">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#my-code-example">My code example</a>
+      <a href="#my-education">My education</a>
+      <a href="#knowledge-of-languages">Knowledge of languages</a>
+    </nav>
     <main>
+      <div id="my-contacts" class="anchor"></div>
       <section>
         <h2>My contacts</h2>
         <ul>
@@ -40,6 +49,7 @@
           </li>
         </ul>
       </section>
+      <div id="about-me" class="anchor"></div>
       <section>
         <h3>About Me</h3>
         <p>
@@ -54,6 +64,7 @@
           Everything seems complicated until it becomes easy.
         </blockquote>
       </section>
+      <div id="skills" class="anchor"></div>
       <section>
         <h3>Skills</h3>
         <p>I'm learning the basics:</p>
@@ -67,32 +78,36 @@
           I am well acquainted with <span>Visual Basic for Applications</span>.
         </p>
       </section>
+      <div id="my-code-example" class="anchor"></div>
       <section>
         <h3>My code example</h3>
         <p>
           My solution to the problem <span>Handshake problem</span> on the site
           Сodewars.
         </p>
-        <p>
-          <span>Description:</span> Johnny is a farmer and he annually holds a
-          beet farmers convention "Drop the beet". Every year he takes photos of
-          farmers handshaking. Johnny knows that no two farmers handshake more
-          than once. He also knows that some of the possible handshake
-          combinations may not happen. However, Johnny would like to know the
-          minimal amount of people that participated this year just by counting
-          all the handshakes. Help Johnny by writing a function, that takes the
-          amount of handshakes and returns the minimal amount of people needed
-          to perform these handshakes (a pair of farmers handshake only once)._
-        </p>
-        <pre>
+        <details>
+          <summary>Description:</summary>
+          <p>
+            Johnny is a farmer and he annually holds a beet farmers convention
+            "Drop the beet". Every year he takes photos of farmers handshaking.
+            Johnny knows that no two farmers handshake more than once. He also
+            knows that some of the possible handshake combinations may not
+            happen. However, Johnny would like to know the minimal amount of
+            people that participated this year just by counting all the
+            handshakes. Help Johnny by writing a function, that takes the amount
+            of handshakes and returns the minimal amount of people needed to
+            perform these handshakes (a pair of farmers handshake only once).
+          </p>
+        </details>
+        <pre><code>
             function getParticipants(handshakes) {
                 let people = 1;
                 let numberHandshakes = 0;
                 let i = 1;
                 while (true) {
                     while (i != people) {
-                    numberHandshakes += people - i;
-                    i++;
+                        numberHandshakes += people - i;
+                        i++;
                     }
                     if (numberHandshakes >= handshakes) break;
                     people++;
@@ -101,8 +116,9 @@
                 }
                 return people;
             }
-        </pre>
+        </code></pre>
       </section>
+      <div id="my-education" class="anchor"></div>
       <section>
         <h3>My education</h3>
         <ul>
@@ -131,6 +147,7 @@
           </li>
         </ul>
       </section>
+      <div id="knowledge-of-languages" class="anchor"></div>
       <section>
         <h3>Knowledge of languages</h3>
         <ul>
@@ -141,8 +158,8 @@
       </section>
     </main>
     <footer>
-      <p>© <time datetime="2021">2021</time> by Sergey Kondratyuk</p>
       <a href="https://github.com/SerbanyaSk">GitHub</a>
+      <p>© <time datetime="2021">2021</time> by Sergey Kondratyuk</p>
       <a href="https://rs.school/js/"
         ><img src="images/rs_school_js.svg" alt="rs.school.js logo"
       /></a>
