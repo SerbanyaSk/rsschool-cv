@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Sergey Kondratyuk CV</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Sergey Kondratyuk</h1>
+      <img alt="photo by Sergey Kondratyuk" src="photo.jpg" />
+      <nav>
+        <li><a href="#my-contacts">My contacts</a></li>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#my-code-example">My code example</a></li>
+        <li><a href="#my-education">My education</a></li>
+        <li><a href="#knowledge-of-languages">Knowledge of languages</a></li>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>My contacts</h2>
+        <ul>
+          <li>
+            <span>Telegram:</span>
+            <a href="https://t.me/SerbanyaSk">SerbanyaSk</a>
+          </li>
+          <li><span>Discord:</span> SerbanyaSk#8303</li>
+          <li>
+            <span>VK:</span> <a href="https://vk.com/serbanyask">SerbanyaSk</a>
+          </li>
+          <li>
+            <span>Email:</span>
+            <a href="mailto:serbanya.sk@gmail.com">serbanya.sk@gmail.com</a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3>About Me</h3>
+        <p>
+          I am best able to work with symbolic systems, so I am a musician and a
+          novice web developer. I am unhurried, calm and patient, which allows
+          me to work with monotonous tasks. However, I do not tolerate
+          monotonous tasks that can be automated, I like a responsive interface,
+          a beautiful design, and I believe that every project in the world
+          should have its own website.
+        </p>
+        <blockquote>
+          Everything seems complicated until it becomes easy.
+        </blockquote>
+      </section>
+      <section>
+        <h3>Skills</h3>
+        <p>I'm learning the basics:</p>
+        <ul>
+          <li>HTML5 & CSS3</li>
+          <li>JavaScript</li>
+          <li>PHP & MySQL</li>
+          <li>Git & GitHub</li>
+        </ul>
+        <p>
+          I am well acquainted with <span>Visual Basic for Applications</span>.
+        </p>
+      </section>
+      <section>
+        <h3>My code example</h3>
+        <p>
+          My solution to the problem <span>Handshake problem</span> on the site
+          Сodewars.
+        </p>
+        <p>
+          <span>Description:</span> Johnny is a farmer and he annually holds a
+          beet farmers convention "Drop the beet". Every year he takes photos of
+          farmers handshaking. Johnny knows that no two farmers handshake more
+          than once. He also knows that some of the possible handshake
+          combinations may not happen. However, Johnny would like to know the
+          minimal amount of people that participated this year just by counting
+          all the handshakes. Help Johnny by writing a function, that takes the
+          amount of handshakes and returns the minimal amount of people needed
+          to perform these handshakes (a pair of farmers handshake only once)._
+        </p>
+        <pre>
+            function getParticipants(handshakes) {
+                let people = 1;
+                let numberHandshakes = 0;
+                let i = 1;
+                while (true) {
+                    while (i != people) {
+                    numberHandshakes += people - i;
+                    i++;
+                    }
+                    if (numberHandshakes >= handshakes) break;
+                    people++;
+                    numberHandshakes = 0;
+                    i = 1;
+                }
+                return people;
+            }
+        </pre>
+      </section>
+      <section>
+        <h3>My education</h3>
+        <ul>
+          <li>
+            Technical school specializing in <span>software development</span>
+          </li>
+          <li>
+            All intensive <span>HTML & CSS</span> courses
+            <a href="https://webref.ru/">WebReference</a>
+          </li>
+          <li>
+            <span>JavaScript:</span>
+            <span
+              >"JavaScript for children. Self-help guide on programming"</span
+            >
+            and i'm studying
+            <a href="https://learn.javascript.ru/">learn.javascript.ru</a>
+          </li>
+          <li>
+            More than 10 thousand lines of code when solving tasks on automation
+            of document flow in the enterprise using Visual Basic for
+            Applications(currently successfully used)
+          </li>
+          <li>
+            Currently in the process of RS Schools Course "JavaScript/Front-end"
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3>Knowledge of languages</h3>
+        <ul>
+          <li>Russian: native</li>
+          <li>Ukrainian: second native</li>
+          <li>English Basic User (Elementary English)</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>© <time datetime="2021">2021</time> by Sergey Kondratyuk</p>
+      <a href="https://github.com/SerbanyaSk">GitHub</a>
+      <a href="https://rs.school/js/"
+        ><img alt="photo by Sergey Kondratyuk" src="photo.jpg"
+      /></a>
+    </footer>
+  </body>
+</html>
