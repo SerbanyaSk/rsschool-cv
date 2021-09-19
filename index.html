@@ -22,13 +22,15 @@
         <p>Beginner front-end developer</p>
       </div>
     </header>
-    <nav>
-      <a href="#my-contacts">My contacts</a>
-      <a href="#about-me">About Me</a>
-      <a href="#skills">Skills</a>
-      <a href="#my-code-example">My code example</a>
-      <a href="#my-education">My education</a>
-      <a href="#knowledge-of-languages">Knowledge of languages</a>
+    <nav tabindex="0">
+      <div tabindex="0">
+        <a href="#my-contacts">My contacts</a>
+        <a href="#about-me">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#my-code-example">My code example</a>
+        <a href="#my-education">My education</a>
+        <a href="#knowledge-of-languages">Knowledge of languages</a>
+      </div>
     </nav>
     <main>
       <div id="my-contacts" class="anchor"></div>
@@ -100,22 +102,22 @@
           </p>
         </details>
         <pre><code>
-            function getParticipants(handshakes) {
-                let people = 1;
-                let numberHandshakes = 0;
-                let i = 1;
-                while (true) {
-                    while (i != people) {
-                        numberHandshakes += people - i;
-                        i++;
-                    }
-                    if (numberHandshakes >= handshakes) break;
-                    people++;
-                    numberHandshakes = 0;
-                    i = 1;
-                }
-                return people;
-            }
+function getParticipants(handshakes) {
+    let people = 1;
+    let numberHandshakes = 0;
+    let i = 1;
+    while (true) {
+        while (i != people) {
+            numberHandshakes += people - i;
+            i++;
+        }
+        if (numberHandshakes >= handshakes) break;
+        people++;
+        numberHandshakes = 0;
+        i = 1;
+    }
+    return people;
+}
         </code></pre>
       </section>
       <div id="my-education" class="anchor"></div>
