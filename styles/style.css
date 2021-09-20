@@ -187,10 +187,11 @@ footer a:first-child {
   font-weight: 700;
 }
 
-footer a:nth-child(2) {
+footer p {
   background: #000;
   color: #fff;
   display: block;
+  margin: 0;
 }
 
 footer a:last-child img {
